@@ -1,0 +1,32 @@
+{
+  "heartRateData": [
+    {
+      "dateTime": "2024-01-01 10:00:00",
+      "value": {
+        "bpm": 75,
+        "confidence": 2
+      }
+    },
+    {
+      "dateTime": "2024-01-01 10:01:00",
+      "value": {
+        "bpm": 80,
+        "confidence": 2
+      }
+    },
+    {
+      "dateTime": "2024-01-01 10:02:00",
+      "value": {
+        "bpm": 65,
+        "confidence": 2
+      }
+    },
+    {
+      "dateTime": "2024-01-01 10:03:00",
+      "value": {
+        "bpm": 100,
+        "confidence": 2
+      }
+    }
+  ]
+}

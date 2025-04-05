@@ -1,0 +1,192 @@
+.header-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {  
+    height: 40px; /* Đặt chiều cao hình ảnh */  
+    margin-right: 10px; /* Khoảng cách bên phải hình ảnh */  
+  } 
+  
+  .header-Container__leftSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    .header-Container__formTitle {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  
+  .header-Container__middleSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tabButton {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #e8e8e8;
+    }
+  
+    &.activeTab {
+      color: #1a73e8;
+      border-bottom: 2px solid #1a73e8;
+    }
+  }
+  
+  .header-Container__rightSection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  
+    .bi {
+      font-size: 20px;
+      cursor: pointer;
+  
+      &:hover {
+        color: #3e4044;
+      }
+    }
+  }
+
+  .rightSection__previewButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    color: transparent;  /* Ẩn văn bản mặc định */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #f0f0f0;  /* Thêm hiệu ứng khi hover */
+    }
+  
+    i {
+      font-size: 20px;  /* Kích thước của icon */
+      color: #666;
+    }
+  
+    .rightSection__previewText {
+      font-size: 16px;
+      font-weight: bold;
+      color: #666;
+      opacity: 0;  /* Ẩn văn bản mặc định */
+      transition: opacity 0.3s ease;  /* Hiệu ứng mượt mà */
+    }
+  
+    &:hover .rightSection__previewText {
+      opacity: 1;  /* Hiện văn bản khi hover */
+    }
+  }
+  
+  .rightSection__submitButton {
+    background-color: #446a8d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #67919e;
+    }
+  }
+  /* styles.css */  
+/* Style cho modal */  
+.ReactModal__Overlay {  
+  background-color: rgba(0, 0, 0, 0.5);  
+}  
+
+.ReactModal__Content {  
+  background: white;  
+  border-radius: 4px;  
+  padding: 20px;  
+  max-width: 500px;  
+  max-height: 600px;
+  margin: auto; /* Giữa màn hình */  
+  position: relative;  
+
+  .closeButton {  
+    position: absolute;  
+    top: 10px;  
+    right: 10px;  
+    background: transparent;  
+    border: none;  
+    font-size: 24px; /* Kích thước cho biểu tượng X */  
+    cursor: pointer;  
+    color: #b3a7a8; /* Màu cho biểu tượng X */  
+
+    &:hover {  
+      color: #c82333; /* Màu khi hover */  
+    }  
+  }  
+
+  h2 {  
+    margin: 0 0 15px;  
+    font-size: 1.5rem;  
+  }  
+
+  form {  
+    display: flex;  
+    flex-direction: column;  
+
+    div {  
+      margin-bottom: 15px;  
+
+      label {  
+        margin-bottom: 5px;  
+        font-weight: bold;  
+      }  
+
+      input,  
+      textarea {  
+        width: 100%;  
+        padding: 10px;  
+        border: 1px solid #ccc;  
+        border-radius: 4px;  
+        font-size: 1rem;  
+
+        &:focus {  
+          border-color: #007bff;  
+          outline: none;  
+        }  
+      }  
+    }  
+    
+
+    button {  
+      margin-top: 10px;  
+      padding: 10px;  
+      border: none;  
+      border-radius: 4px;  
+      cursor: pointer;  
+      background-color: #287fa7; /* Màu cho nút Gửi */  
+      color: white;  
+
+      &:hover {  
+        background-color: #218838; /* Màu khi hover */  
+      }  
+    }  
+  }  
+}  

@@ -1,0 +1,246 @@
+// Container chính  
+.header {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 10px 20px;  
+  background-color: #f1f1f1;  
+  border-radius: 25px;  
+
+  @media (max-width: 768px) {  
+    flex-direction: column; // Chuyển hướng thành cột trên màn hình nhỏ  
+  }  
+}  
+
+.header__menu {  
+  display: flex;  
+  align-items: center;  
+
+  .header__logo {  
+    height: 40px; // Đặt chiều cao hình ảnh  
+    margin-right: 10px; // Khoảng cách bên phải hình ảnh  
+  }  
+
+  .header__title {  
+    margin-left: 10px;  
+    font-weight: 600;  
+    font-size: 20px;  
+  }  
+}  
+
+.header__search-container {  
+  display: flex;  
+  align-items: center;  
+  background-color: #f2f4f8;   
+  border-radius: 25px;   
+  padding: 8px 12px;   
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+
+  .header__search-input {  
+    border: none;   
+    outline: none;   
+    background: transparent;   
+    font-size: 16px;   
+    margin-left: 8px;   
+    flex: 1;   
+  }  
+
+  .header_search-icon {  
+    color: #7a7a7a; // Màu của biểu tượng tìm kiếm  
+    width: 20px; // Chiều rộng biểu tượng  
+    height: 20px; // Chiều cao biểu tượng  
+  }  
+}  
+
+.formListContainer {  
+  display: flex;  
+  flex-direction: column; // Thay đổi kiểu để dễ dàng quản lý khi có nhiều phần tử  
+  padding: 16px;  
+  background-color: #f8f9fa;  
+  border-bottom: 1px solid #e0e0e0;  
+
+  @media (max-width: 768px) {  
+    padding: 10px; // Giảm padding trên màn hình nhỏ  
+  }  
+}  
+
+.form-header {  
+  display: block;  
+  justify-content: space-between; // Thay đổi thành flex  
+  align-items: center;  
+  margin-bottom: 24px;  
+
+  h1 {  
+    font-size: 24px;  
+    font-weight: 600;  
+    color: #333;  
+  }  
+
+  .form-header__create-button {  
+    padding: 10px 20px;  
+    background-color: #10a1d0;  
+    color: #fff;  
+    border: none;  
+    border-radius: 6px;  
+    font-size: 14px;  
+    font-weight: 500;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+
+    &:hover {  
+      background-color: #4f8fa5;  
+    }  
+
+    &:disabled {  
+      background-color: #ccc;  
+      cursor: not-allowed;  
+    }  
+    
+    i {  
+      margin-right: 8px;  
+      font-size: 16px;  
+      vertical-align: middle;  
+    }  
+  }  
+}  
+
+// Danh sách biểu mẫu  
+.form-list {  
+  h2 {  
+    font-size: 18px;  
+    margin-bottom: 16px;  
+    color: #555;   
+  }  
+
+  .form-list__grid {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));  
+    gap: 16px;  
+  }  
+
+  .form-list__item {  
+    position: relative;  
+    padding: 16px;  
+    border: 1px solid #e0e0e0;  
+    border-radius: 8px;  
+    background-color: #fff;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: space-between;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    transition: box-shadow 0.3s ease, transform 0.2s ease;  
+
+    &:hover {  
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  
+      transform: translateY(-2px);  
+    }  
+
+    .form-list__thumbnail {  
+      width: 100%;  
+      height: 150px;  
+      background-color: #f0f0f0;  
+      border-radius: 4px;  
+      margin-bottom: 12px;  
+      overflow: hidden;  
+
+      img {  
+        width: 100%;  
+        height: 100%;  
+        object-fit: cover;  
+      }  
+    }  
+
+    .form-list__content {  
+      h3 {  
+        font-size: 16px;  
+        margin-bottom: 8px;  
+        color: #333;  
+        white-space: nowrap;  
+        overflow: hidden;  
+        text-overflow: ellipsis;  
+      }  
+
+      p {  
+        font-size: 14px;  
+        color: #666;  
+        line-height: 1.4;  
+        max-height: 42px; // Giới hạn chiều cao mô tả  
+        overflow: hidden;  
+        text-overflow: ellipsis;  
+      }  
+    }  
+
+    .form-list__menu {  
+      position: absolute;  
+      right: 10px; /* Cách bên phải 10px */  
+      bottom: 10px; /* Cách đáy 10px */  
+      cursor: pointer;  
+      color: #555;  
+      display: inline-block;  
+
+      .form-list__menu-button {  
+        background: none;  
+        border: none;  
+        font-size: 18px;  
+        cursor: pointer;  
+        color: #666;  
+
+        &:hover {  
+          color: #333;  
+        }  
+      }  
+
+      .form-list__menu-options {  
+        display: none;  
+        position: absolute;  
+        top: 100%; // Đặt menu nằm ngay bên dưới nút  
+        background-color: #fff;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+        border-radius: 4px;  
+        overflow: hidden;  
+        z-index: 999999;  
+        min-width: 150px;  
+
+        button {  
+          display: block;  
+          width: 100%;  
+          padding: 10px 16px;  
+          text-align: left;  
+          font-size: 14px;  
+          color: #333;  
+          background: none;  
+          border: none;  
+          cursor: pointer;  
+
+          &:hover {  
+            background-color: #f8f8f8;  
+          }  
+        }  
+      }  
+
+      &:hover .form-list__menu-options {  
+        display: block;  
+      }  
+    }  
+  }  
+}  
+
+// Media Queries cho tối ưu hóa trên các màn hình nhỏ hơn  
+@media (max-width: 600px) {  
+  .header {  
+    padding: 10px; // Giảm padding  
+    flex-direction: column; // Cột trên màn hình nhỏ  
+  }  
+
+  .form-header {  
+    flex-direction: column; // Đặt cột cho nút tạo  
+  }  
+
+  .form-list__item {  
+    padding: 12px; // Giảm padding cho các phần tử
+  } 
+  .form-list__menu {  
+    right: 5px; // Giảm cách bên phải cho các màn hình nhỏ  
+    bottom: 5px; // Giảm cách đáy cho các màn hình nhỏ  
+  }  
+}

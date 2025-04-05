@@ -1,0 +1,77 @@
+/* AnswerForm.module.scss */
+.answer-form {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #202124;
+  }
+  &__form-name {  
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #333;  
+    margin: 1rem 0; 
+    text-align: center; 
+
+    // Thêm các hiệu ứng hover nếu cần  
+    &:hover {  
+      color: #46586b; // Thay đổi màu sắc khi hover  
+      text-decoration: underline; // Gạch chân khi hover  
+    }  
+
+    // Truy cập cho màn hình nhỏ  
+    @media (max-width: 768px) {  
+      font-size: 1.5rem; // Kích thước chữ nhỏ hơn trên màn hình nhỏ  
+
+    }  
+  } 
+
+  &__question {
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+
+    h3 {
+      font-size: 1.4rem;
+      color: #202124;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      margin: 0.4rem 0;
+      font-size: 1rem;
+      color: #5f6368;
+    }
+  }
+
+  &__total-answers {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #1a73e8;
+    font-weight: 500;
+
+    span {
+      color: #5f6368;
+      font-weight: normal;
+    }
+  }
+
+  .chart-container {
+    margin-top: 1.5rem;
+    text-align: center;
+
+    canvas {
+      max-width: 100%;
+    }
+  }
+}

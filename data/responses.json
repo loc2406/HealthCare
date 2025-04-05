@@ -1,0 +1,130 @@
+[
+  {
+    "user_id": ["0987", "897", "5983bc4f-610c-4861-84d6-7a2716742328"],
+    "formId": "ba966240-32f1-4424-89fc-e58014575565",
+    "title": "Khảo sát về kiểm tra sức khỏe bên nhân",
+    "description": "Khám Đặc Định",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "Tên bệnh nhân",
+        "featureType": "Short Answer",
+        "is_done": true,
+        "shortAnswer": "khai"
+      },
+      {
+        "question_id": "Q2",
+        "question": "Hiện tại, bạn có uống những loại thuốc nào từ a đến c không?",
+        "featureType": "Checkboxes",
+        "is_done": true,
+        "checkboxGroup": ["Thuốc hạ huyết áp", "Thuốc giảm mỡ trong máu và chất béo trung tính"]
+      },
+      {
+        "question_id": "Q3",
+        "question": "Bạn đã từng được bác sĩ chẩn đoán đang mắc bệnh tai biến mạch máu não (xuất huyết não, nhồi máu não, v.v...) và được nhận điều trị hay không?",
+        "featureType": "Multiple Choice",
+        "is_done": true,
+        "multipleChoice": ["Có"]
+      },
+      {
+        "question_id": "Q4",
+        "question": "Bạn đã từng được bác sĩ chẩn đoán đang mắc bệnh thận mạn tính hay suy thận và được nhận điều trị (chạy thận nhân tạo, v.v...) hay không?",
+        "featureType": "Multiple Choice",
+        "is_done": true,
+        "multipleChoice": ["Không"]
+      },
+      {
+        "question_id": "Q5",
+        "question": "Hiện tại bạn có thói quen hút thuốc không?",
+        "featureType": "Multiple Choice",
+        "is_done": true,
+        "multipleChoice": ["Không"]
+      },
+      {
+        "question_id": "Q6",
+        "question": "",
+        "featureType": "",
+        "is_done": false
+      }
+    ],
+    "start_time": "2024-12-01T17:52:34.578Z",
+    "end_time": "2024-12-04T00:00:00.000Z",
+    "progress": [
+      {
+        "lessons_completed": 1,
+        "questions_answered": 100
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "user_id": ["0987", "897", "5983bc4f-610c-4861-84d6-7a2716742328"],
+    "formId": "ba966240-32f1-4424-89fc-e58014575565",
+    "title": "Khảo sát về kiểm tra sức khỏe bên nhân",
+    "description": "Khám Đặc Định",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "Tên bệnh nhân",
+        "featureType": "Short Answer",
+        "is_done": true,
+        "shortAnswer": "James"
+      },
+      {
+        "question_id": "Q2",
+        "question": "Hiện tại, bạn có uống những loại thuốc nào từ a đến c không?",
+        "featureType": "Checkboxes",
+        "is_done": true,
+        "checkboxGroup": ["Thuốc hạ huyết áp"]
+      },
+      {
+        "question_id": "Q3",
+        "question": "Bạn đã từng được bác sĩ chẩn đoán đang mắc bệnh tai biến mạch máu não (xuất huyết não, nhồi máu não, v.v...) và được nhận điều trị hay không?",
+        "featureType": "Multiple Choice",
+        "is_done": true,
+        "multipleChoice": ["Không"]
+      },
+      {
+        "question_id": "Q4",
+        "question": "Bạn đã từng được bác sĩ chẩn đoán đang mắc bệnh thận mạn tính hay suy thận và được nhận điều trị (chạy thận nhân tạo, v.v...) hay không?",
+        "featureType": "Multiple Choice",
+        "is_done": true,
+        "multipleChoice": ["Không"]
+      },
+      {
+        "question_id": "Q5",
+        "question": "Hiện tại bạn có thói quen hút thuốc không?",
+        "featureType": "Multiple Choice",
+        "is_done": true,
+        "multipleChoice": ["Không"]
+      },
+      {
+        "question_id": "Q6",
+        "question": "",
+        "featureType": "",
+        "is_done": false
+      }
+    ],
+    "start_time": "2024-12-01T17:52:34.578Z",
+    "end_time": "2024-12-04T00:00:00.000Z",
+    "progress": [
+      {
+        "lessons_completed": 1,
+        "questions_answered": 100
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  }
+]

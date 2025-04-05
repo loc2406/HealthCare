@@ -1,0 +1,12 @@
+body{
+    background: rgb(213, 212, 212);
+}
+
+.import_by_folder p, .import_by_API p{
+    display: none;
+}
+
+.import_by_API i, .import_by_folder i{
+    margin-right: unset !important;
+}
+

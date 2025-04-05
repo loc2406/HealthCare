@@ -1,0 +1,46 @@
+[
+  {
+    "id": "d1f118bb-a320-4144-8596-447c06fa5586",
+    "email": "lthanhdat17@gmail.com",
+    "gender": "Nam",
+    "name": "Lê Nguyễn Thành Đạt",
+    "age": 21,
+    "phone": "0399092452",
+    "password": "123",
+    "createdBy": "897",
+    "role": "patient"
+  },
+  {
+    "id": "1049a7d5-7595-4f6a-abbd-349a00a88399",
+    "email": "lthanhdat16@gmail.com",
+    "gender": "Nam",
+    "name": "Nguyễn Thành",
+    "age": 22,
+    "phone": "0399092654",
+    "password": "123",
+    "createdBy": "897",
+    "role": "patient"
+  },
+  {
+    "id": "09d58c51-bb1d-4625-ade1-805522f6ca25",
+    "email": "def123@gmail.com",
+    "gender": "Nam",
+    "name": "Lê Thành",
+    "age": 22,
+    "phone": "0399094569",
+    "password": "123",
+    "createdBy": "897",
+    "role": "patient"
+  },
+  {
+    "id": "5983bc4f-610c-4861-84d6-7a2716742328",
+    "email": "abc123@gmail.com",
+    "gender": "Nam",
+    "name": "Khải",
+    "age": 22,
+    "phone": "0399094566",
+    "role": "Doctor",
+    "password": "123",
+    "createdBy": "1134"
+  }
+]

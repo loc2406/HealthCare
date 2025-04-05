@@ -1,0 +1,516 @@
+.form {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các phần tử con di chuyển khi không đủ không gian */
+  max-width: 100%; /* Đảm bảo không bị tràn ra ngoài màn hình */
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+ 
+  .icon {  
+     /* Khoảng cách giữa tiêu đề và biểu tượng */  
+    margin-right: 10px;
+    transition: transform 0.5s linear;
+    z-index: 10000;
+  }  
+  
+  .spinner-border {  
+    color: #4e5666; /* Thay đổi màu sắc của spinner tuỳ ý */  
+    width: 1rem; /* Kích thước spinner */  
+    height: 1rem; /* Kích thước spinner */  
+  }
+
+  .form-sidebar {
+    position: fixed;
+    top: 85px;
+    left: 0;
+    width: 280px;
+    max-width: 300px;
+    height: calc(100vh - 40px);
+    background-color: #eceef7;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    transition: width 0.3s ease;  
+    overflow: hidden;
+
+    &.open {  
+      width: 260px; /* Hoặc giá trị nào đó cho sidebar mở */  
+    }  
+  
+    &.closed {  
+      width: 60px;/* Hoặc giá trị bạn muốn cho sidebar đóng */  
+
+      .form-sidebar__sidebarItem{
+        display: none;
+      }
+    }  
+
+    @media (max-width: 768px) {
+        width: 60px; /* Sidebar thu nhỏ thành 60px */
+        z-index: 999;
+      
+      /* Hiển thị icon sidebar khi thu nhỏ */
+      .form-sidebar__toggleIcon {
+        display: block;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .form-sidebar__sidebarItem {
+      margin-bottom: 1.5rem;
+      width: 200px;
+
+      .form-sidebar__sidebarItem-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      select,
+      .dateField {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: #333;
+          outline: none;
+        }
+      }
+      .user-profile {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 1rem;
+      }
+      .user-profile .profile-image .default-avatar {
+        width: 40px;
+        height: 40px;
+        background: #727cf5;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+      }
+      .user-profile .profile-image img {
+        object-fit: cover;
+      }
+
+      .form-sidebar__addQuestionButton {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: #33CCFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #99CCFF;
+        }
+      }
+    }
+
+    .form-sidebar__assignContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+  
+      .dropdown {
+        width: 75%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 14px;
+        background-color: #fff;
+        color: #333;
+  
+        &:focus {
+          outline: none;
+          border-color: #66CCFF;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+      }
+  
+      .removeButton {
+        background-color: #FF3333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        i {
+          font-size: 16px;
+        }
+  
+        &:hover {
+          background-color: #CC3333;
+        }
+  
+        &:active {
+          background-color: #bd2130;
+        }
+      }
+    }
+
+    .addButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 75%;
+      background-color: #33CCFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      i {
+        font-size: 16px;
+        margin-right: 5px;
+      }
+  
+      &:hover {
+        background-color: #99CCFF;
+      }
+  
+      &:active {
+        background-color: #00CCFF;
+      }
+    }
+  }
+  
+  .form-sidebar__toggleIcon {
+    display: block; /* Ẩn icon khi sidebar có đủ không gian */
+  }
+
+  .form-mainContent {
+    flex: 1;   
+    padding: 2rem;
+
+    .form-mainContent__titleSection {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+      .form-mainContent__labelWithError {
+        position: relative;   
+
+        .titleSection__label {
+          font-weight: bold;
+        }
+
+        .form-mainContent__errorIcon {
+          margin-left: 0.5rem;
+          color: #dc3545;
+          font-size: 0.9rem;
+
+          .form-mainContent__errorTooltip {
+            display: none;
+            background-color: #dc3545;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            white-space: nowrap;
+          }
+
+          &:hover .form-mainContent__errorTooltip {
+            display: block;
+          }
+        }
+      }
+
+      .form-mainContent__answerField {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: #10a1d0;
+          outline: none;
+        }
+      }
+    
+    .form-mainContent__descriptionSection {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ddd;
+    }     
+
+    .form-mainContent__questionSection {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fdfdfd;
+
+      .questionText {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .answerField {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: #10a1d0;
+          outline: none;
+        }
+      }
+      .questionSection-rowQuestion {  
+        display: flex;  
+        align-items: center;  // Căn giữa theo chiều dọc  
+        gap: 1rem;           // Khoảng cách giữa các phần tử  
+      
+        .answerField-question {  
+          flex: 1;
+          min-width: 100px;
+          padding: 0.8rem;
+          font-size: 16px;
+          border: none;
+          border-bottom: 2px solid #ddd;
+          border-radius: 4px;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+          transition: border-color 0.3s ease; 
+        } 
+        .selectField {
+            flex: 1;
+            min-width: 100px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+    
+            &:focus {
+              border-color: #10a1d0;
+              outline: none;
+            }
+        }
+      }
+
+      .optionRow {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+
+        .answerField {
+          flex: 1;
+        }
+
+        .removeOption {
+          padding: 0.5rem;
+          background-color: transparent;
+          color: transparent;
+          border: none;
+          gap: 8px;
+          border-radius: 40px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          i {
+            font-size: 20px;  /* Kích thước của icon */
+            color: #666;
+          }
+
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+
+      .addQuestionButton {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 8px 16px;
+        background-color: transparent;
+        border: none;
+        border-radius: 30px;
+        color: transparent;  /* Ẩn văn bản mặc định */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: #f0f0f0;
+        }
+        i {
+          font-size: 20px;  /* Kích thước của icon */
+          color: #666;
+        }
+    
+        &:active {
+          background-color: #f0f0f0;
+        }
+      }
+
+      .switchSection {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: space-between;
+      
+        .switchLabel {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+      
+        .form-check-input {
+          margin-left: 1rem;
+          width: 40px;
+          height: 20px;
+          appearance: none !important; /* Loại bỏ giao diện checkbox mặc định */
+          background-color: #ddd;
+          border-radius: 20px;
+          position: relative;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+        
+          &:checked {
+            background-color: #597fb8; /* Màu khi bật */
+          }
+        
+          &:checked::before {
+            transform: translateX(20px); /* Di chuyển nút sang phải */
+          }
+        
+          &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+            z-index: 1;
+          }
+        } 
+        .form__remove-question {
+          margin-left: auto; /* Đưa nút xóa về phía phải */
+          background-color: transparent;
+          border: none;
+          color: #616265;
+          cursor: pointer;
+
+          &:hover {
+            color: #dc3545;
+          }
+        }
+      }
+    }
+
+    .buttonSection {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+
+      .removeButton {
+        padding: 0.5rem 1rem;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #b02a37;
+        }
+      }
+    }
+  }
+}
+
+// Media Queries cho responsive
+@media (max-width: 1200px) {
+  .form {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .form-sidebar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .form-mainContent {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 1rem;
+  }
+
+  .form-sidebar {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .form-mainContent {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .form .form-sidebar.closed{
+    z-index: 999;
+    left: -6rem; 
+  }
+
+  .form .form-sidebar.open{
+    left: 0rem;
+  }
+
+  /* Hiển thị icon sidebar khi thu nhỏ */
+  .form-sidebar__toggleIcon {
+    display: none;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    cursor: pointer;
+  }
+}

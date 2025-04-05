@@ -1,0 +1,112 @@
+[
+  {
+    "email": "lthanhdat17@gmail.com",
+    "id": "897",
+    "name": "Thanh Dat",
+    "phone": "012345679",
+    "password": "12345678",
+    "role": "admin",
+    "ACCESS_TOKEN_SECRET": "MDEzLmNzN91bmFkbG9tcGxleR0aQzIxRl2jVGfMBTFbQFpC3xCEZ2ox",
+    "REFRESH_TOKEN_SECRET": "PqTG5ntmh3vCplgKjtgF6lmI8wjGBnXy1HL8glFtRcz6n+3QtA+AaVR",
+    "avatar": "/images/avatar/user-897.jpg"
+  },
+  {
+    "email": "ductinhh1610@gmail.com",
+    "id": "1134",
+    "name": "Duc Tinh",
+    "phone": "012345679",
+    "password": "12345679",
+    "role": "patient",
+    "ACCESS_TOKEN_SECRET": "NDEzLmNzN91bmFkbG9tcGxleR0aQzIxRl2jVGfMBTFbQFpC3xCEZ2ox",
+    "REFRESH_TOKEN_SECRET": "GqTG5ntmh3vCplgKjtgF6lmI8wjGBnXy1HL8glFtRcz6n+3QtA+AaVR",
+    "avatar": "/images/avatar/user-1134.jpg"
+  },
+  {
+    "email": "khaidinhtran123@gmail.com",
+    "id": "0987",
+    "name": "Dinh Khai",
+    "phone": "094345679",
+    "password": "123456789",
+    "role": "admin",
+    "ACCESS_TOKEN_SECRET": "NDEzLmNzN91bmFkbG9tcGxleR0aQzIxRl2jVGfMBTFbQFpC3xCEZ2ox",
+    "REFRESH_TOKEN_SECRET": "GqTG5ntmh3vCplgKjtgF6lmI8wjGBnXy1HL8glFtRcz6n+3QtA+AaVR",
+    "avatar": "/images/default-avatar.jpg"
+  },
+  {
+    "id": "d1f118bb-a320-4144-8596-447c06fa5586",
+    "email": "lthanhdat17@gmail.com",
+    "gender": "Nam",
+    "name": "Lê Nguyễn Thành Đạt",
+    "age": 21,
+    "phone": "0399092452",
+    "password": "123",
+    "createdBy": "1134",
+    "role": "patient"
+  },
+  {
+    "id": "1049a7d5-7595-4f6a-abbd-349a00a88399",
+    "email": "lthanhdat16@gmail.com",
+    "gender": "Nam",
+    "name": "Nguyễn Thành",
+    "age": 22,
+    "phone": "0399092654",
+    "password": "123",
+    "createdBy": "1134",
+    "role": "patient"
+  },
+  {
+    "id": "09d58c51-bb1d-4625-ade1-805522f6ca25",
+    "email": "def123@gmail.com",
+    "gender": "Nam",
+    "name": "Lê Thành",
+    "age": 22,
+    "phone": "0399094569",
+    "password": "123",
+    "createdBy": "1134",
+    "role": "patient"
+  },
+  {
+    "id": "5983bc4f-610c-4861-84d6-7a2716742328",
+    "email": "abc123@gmail.com",
+    "gender": "Nam",
+    "name": "Khải",
+    "age": 22,
+    "phone": "0399094566",
+    "role": "patient",
+    "password": "123",
+    "createdBy": "1134"
+  },
+  {
+    "id": "11252342-82c8-4827-9c47-8620bad42716",
+    "email": "lthanhdat66@gmail.com",
+    "gender": "Nam",
+    "name": "Tính",
+    "age": 25,
+    "phone": "0399094567",
+    "role": "patient",
+    "password": "123",
+    "createdBy": "897"
+  },
+  {
+    "id": "66e76ba8-a7ce-42d9-aebf-67939430ca4a",
+    "email": "loc123@gmail.com",
+    "gender": "Nam",
+    "name": "Lộc",
+    "age": 22,
+    "phone": "0928340121",
+    "role": "patient",
+    "password": "1234",
+    "createdBy": "897"
+  },
+  {
+    "id": "d72e592b-89e4-49b0-928a-43e4566ffec7",
+    "email": "abc456@gmail.com",
+    "gender": "Nam",
+    "name": "Khảii",
+    "age": 24,
+    "phone": "0399092658",
+    "role": "Doctor",
+    "password": "123",
+    "createdBy": "897"
+  }
+]

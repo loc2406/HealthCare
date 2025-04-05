@@ -1,0 +1,310 @@
+.dashboard-container-wrapp{
+  background: rgb(174, 173, 173);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@media (max-width:480px) {
+  .registerform_wrapp {
+    margin-top: 5rem !important;
+    right: 1rem !important;
+    width: 380px !important;
+    
+  }
+}
+
+.registerform_wrapp {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #e7ecf5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out;
+    right: 27rem;
+    top: 2rem;
+    width: 450px;
+    position: absolute;
+    height: 650px;
+    overflow: auto;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .RegisterTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #555;
+  }
+  
+  .form-control {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-group input::placeholder {
+    color: #aaa;
+    opacity: 0.7;
+  }
+  
+  .form-group input,
+  .form-group select {
+    transition: transform 0.2s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    transform: scale(1.02);
+  }
+  
+  .assign-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+    min-height: 50vh;
+    height: max-content;
+  }
+  
+  /* Tiêu đề danh sách */
+  .patient-list-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Bảng bệnh nhân */
+  .patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .patient-table th,
+  .patient-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .patient-table th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .patient-table td {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Hiệu ứng hover cho hàng */
+  .patient-table tr:hover {
+    background-color: #f0f8ff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hàng nút chỉnh sửa */
+  .patient-table td button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Nút sửa */
+  .btn-edit {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .btn-edit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Nút xóa */
+  .btn-delete {
+    background-color: #ff4d4f;
+    color: #ffffff;
+  }
+  
+  .btn-delete:hover {
+    background-color: #d9363e;
+  }
+  
+  .patient-list-container {
+    width: 100%;
+    padding: 16px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .patient-list-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+  
+  .patient-table th,
+  .patient-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .patient-table th {
+    background-color: #357abd;
+    font-weight: bold;
+  }
+  
+  .patient-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .patient-table .patient_tilte_name,
+  .patient-table .patient_name {
+    width: 20%;
+  }
+  
+  .patient-table .patient_tilte_email,
+  .patient-table .patient_email {
+    width: 30%;
+  }
+  
+  .patient-table .patient_tilte_adjust,
+  .patient-table td:last-child {
+    width: 20%;
+  }
+  
+  .patient-table .patient_tilte_age,
+  .patient-table .patient_age,
+  .patient-table .patient_tilte_gender,
+  .patient-table .patient_gender,
+  .patient-table .patient_tilte_phone,
+  .patient-table .patient_phone {
+    display: table-cell; /* Hiển thị mặc định trên desktop */
+  }
+  
+  /* Style for buttons */
+  .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .btn-edit {
+    background-color: #4caf50;
+    color: #fff;
+    margin-right: 8px;
+  }
+  
+  .btn-delete {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .assign-container{
+      margin: 4rem auto !important;
+    }
+
+    .patient-table th,
+    .patient-table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .patient-table .patient_tilte_age,
+    .patient-table .patient_age,
+    .patient-table .patient_tilte_gender,
+    .patient-table .patient_gender,
+    .patient-table .patient_tilte_phone,
+    .patient-table .patient_phone {
+      display: none; /* Ẩn các cột không cần thiết */
+    }
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }

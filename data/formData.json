@@ -1,0 +1,403 @@
+[
+  {
+    "id": "0987",
+    "user_id": ["0987", "897", "5983bc4f-610c-4861-84d6-7a2716742328"],
+    "formId": "ba966240-32f1-4424-89fc-e58014575565",
+    "title": "Khảo sát về kiểm tra sức khỏe bên nhân",
+    "description": "Khám Đặc Định",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "Tên bệnh nhân",
+        "featureType": "Short Answer",
+        "is_done": false,
+        "isRequired": true
+      },
+      {
+        "question_id": "Q2",
+        "question": "Hiện tại, bạn có uống những loại thuốc nào từ a đến c không?",
+        "featureType": "Checkboxes",
+        "is_done": false,
+        "isRequired": true,
+        "checkboxGroup": [
+          "Thuốc hạ huyết áp",
+          "Thuốc giảm lượng đường trong máu hoặc tiêm thuốc insulin",
+          "Thuốc giảm mỡ trong máu và chất béo trung tính"
+        ]
+      },
+      {
+        "question_id": "Q3",
+        "question": "Bạn đã từng được bác sĩ chẩn đoán đang mắc bệnh tai biến mạch máu não (xuất huyết não, nhồi máu não, v.v...) và được nhận điều trị hay không?",
+        "featureType": "Multiple Choice",
+        "is_done": false,
+        "isRequired": true,
+        "multipleChoice": ["Có", "Không"]
+      },
+      {
+        "question_id": "Q4",
+        "question": "Bạn đã từng được bác sĩ chẩn đoán đang mắc bệnh thận mạn tính hay suy thận và được nhận điều trị (chạy thận nhân tạo, v.v...) hay không?",
+        "featureType": "Multiple Choice",
+        "is_done": false,
+        "isRequired": true,
+        "multipleChoice": ["Có", "Không"]
+      },
+      {
+        "question_id": "Q5",
+        "question": "Hiện tại bạn có thói quen hút thuốc không?",
+        "featureType": "Multiple Choice",
+        "is_done": false,
+        "isRequired": true,
+        "multipleChoice": ["Có", "Không"]
+      },
+      {
+        "question_id": "Q6",
+        "question": "",
+        "featureType": "",
+        "is_done": false
+      }
+    ],
+    "start_time": "2024-12-01T17:52:34.578Z",
+    "end_time": "2024-12-04T00:00:00.000Z",
+    "progress": [],
+    "score": []
+  },
+  {
+    "id": "0987",
+    "user_id": ["0987"],
+    "formId": "c47e2da6-201e-414e-a609-26c62b5673e5",
+    "title": "Khảo sát về chất lượng",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "Multiple Choice",
+        "is_done": false,
+        "multipleChoice": []
+      },
+      {
+        "question_id": "Q2",
+        "question": "",
+        "featureType": "Multiple Choice",
+        "is_done": false,
+        "multipleChoice": [""]
+      },
+      {
+        "question_id": "Q3",
+        "question": "",
+        "featureType": "Checkboxes",
+        "is_done": false,
+        "checkboxGroup": ["", ""]
+      }
+    ],
+    "start_time": "2024-12-01T15:18:06.764Z",
+    "end_time": "2024-12-05T00:00:00.000Z",
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "bb8ff796-b754-4075-b88f-e360be4d2c58",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false
+      }
+    ],
+    "start_time": "2024-12-02T17:17:12.678Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "528d06c0-14b1-454f-83e7-128685e9c2fd",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      }
+    ],
+    "start_time": "2024-12-02T17:18:17.189Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": [""],
+    "formId": "feea377d-5b94-4278-8a42-2c28d84f4ed6",
+    "title": "",
+    "description": "",
+    "add": [],
+    "start_time": "2024-12-03T01:45:32.138Z",
+    "end_time": null,
+    "progress": [],
+    "score": []
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "1780fa0e-0453-4ed1-ac22-d55f0ad661d6",
+    "title": "",
+    "description": "",
+    "add": [],
+    "start_time": "2024-12-03T01:48:18.205Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "24a3e7fb-962b-4129-aa98-b91a210a204b",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      },
+      {
+        "question_id": "Q2",
+        "question": "",
+        "featureType": "",
+        "is_done": false
+      },
+      {
+        "question_id": "Q3",
+        "question": "",
+        "featureType": "",
+        "is_done": false
+      }
+    ],
+    "start_time": "2024-12-03T02:40:05.119Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "2c445400-36a5-4b85-ac0d-e95a359f3bf9",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      }
+    ],
+    "start_time": "2024-12-03T03:31:32.458Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "e221e50e-dbf2-474e-94bf-c521a31d67f2",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      }
+    ],
+    "start_time": "2024-12-03T03:36:12.623Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "323a4c8f-a0ce-4895-9382-6e2f348dd2a6",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      }
+    ],
+    "start_time": "2024-12-03T03:51:21.627Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id": "897",
+    "user_id": ["Unassigned"],
+    "formId": "4e650cbd-bc14-408c-9434-b835d3c040df",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      }
+    ],
+    "start_time": "2024-12-03T04:01:16.781Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  },
+  {
+    "id_user": "user_id",
+    "user_id_assign": ["Unassigned"],
+    "formId": "042c5f4e-a276-4dfb-8a67-8cbf225262d9",
+    "title": "",
+    "description": "",
+    "add": [
+      {
+        "question_id": "Q1",
+        "question": "",
+        "featureType": "",
+        "is_done": false,
+        "isRequired": false
+      }
+    ],
+    "start_time": "2024-12-03T11:49:23.407Z",
+    "end_time": null,
+    "progress": [
+      {
+        "lessons_completed": 0,
+        "questions_answered": 0
+      }
+    ],
+    "score": [
+      {
+        "stress_level": 0,
+        "anxiety_level": 0,
+        "depression_level": 0
+      }
+    ]
+  }
+]

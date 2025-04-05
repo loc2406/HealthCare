@@ -1,0 +1,35 @@
+/* Container cho biểu đồ */
+.heartbeat-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0rem;
+    top: 15rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* SVG Biểu đồ nhịp tim */
+  .heartbeat-chart {
+    width: 100%; /* Dài hết màn hình desktop */
+    height: auto;
+  }
+  
+  /* Animation cho đường nhịp tim */
+  .heartbeat-path {
+    stroke-dasharray: 2000; /* Tạm giá trị, sẽ được gán động bằng JS */
+    stroke-dashoffset: 2000;
+    animation: heartbeat 6s linear infinite; /* Animation liền mạch */
+  }
+  
+  /* Hiệu ứng chuyển động */
+  @keyframes heartbeat {
+    from {
+      stroke-dashoffset: 2000; /* Giá trị khởi đầu */
+    }
+    to {
+      stroke-dashoffset: 0; /* Kết thúc tại 0 */
+    }
+  }
+  
